@@ -365,7 +365,9 @@ const HomeView = () => {
             to transform your vision into a reality.
           </span>
           <span>
-            <LxtButton text={"Accepting New Projects"} />
+            <a href="#contact">
+              <LxtButton text={"Accepting New Projects"} />
+            </a>
           </span>
         </div>
         <div className="vector-container">

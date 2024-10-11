@@ -38,6 +38,11 @@
       opacity: 0;
       animation: wordAppear 2s ease forwards;
       animation-delay: 1.5s;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 

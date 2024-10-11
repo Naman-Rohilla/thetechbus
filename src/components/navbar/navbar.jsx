@@ -19,7 +19,9 @@ export default function Navbar() {
               {mt.link}
             </a>
           ))}
-          <LxtButton text={textButton} />
+          <a href="https://calendly.com/thetechbus-support/30min">
+            <LxtButton text={textButton} />
+          </a>
         </div>
       </div>
     </div>

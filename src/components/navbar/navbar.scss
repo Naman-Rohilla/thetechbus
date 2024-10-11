@@ -41,6 +41,11 @@
       font-weight: 500;
       gap: 50px;
 
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
       cursor: pointer;
 
       .item {
