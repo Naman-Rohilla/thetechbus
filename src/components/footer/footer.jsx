@@ -13,7 +13,7 @@ const Form = () => {
         <input placeholder="Phone no." />
       </div>
       <div className="text-area-container">
-        <textarea placeholder="Describe Your Idea" />
+        <textarea className="text-area" placeholder="Describe Your Idea" />
       </div>
       <div className="button-container">
         <span>Send Message</span>
@@ -74,6 +74,7 @@ const LinkContainer = () => {
         </div>
       </div>
       <div className="title-footer">
+        <img src="logo.png" />
         <span>The Tech Bus</span>
       </div>
     </div>

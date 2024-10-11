@@ -87,8 +87,9 @@
       }
 
       .text-area-container {
-        textarea {
-          width: 98%;
+        .text-area {
+          box-sizing: border-box;
+          width: 100%;
           height: 100px;
           background-color: transparent;
           border: 1px solid rgba(0, 0, 0, 0.2);
@@ -160,20 +161,16 @@
       align-items: flex-end;
       justify-content: space-between;
 
-      span:nth-child(1) {
+      span:nth-child(2) {
         float: right;
         color: $secondary-color;
         font-size: 3rem;
         font-weight: 600;
       }
 
-      span:nth-child(2) {
-        float: right;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 600;
-        text-align: end;
-        width: 70%;
+      img {
+        width: 120px;
+        height: 100px;
       }
     }
   }
@@ -237,6 +234,7 @@
     .link-container {
       display: flex;
       flex-direction: column;
+      gap: 60px;
 
       .link-url {
         display: flex;
@@ -250,20 +248,18 @@
 
       .title-footer {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+
         width: 100%;
 
-        span:nth-child(1) {
-          display: flex;
-          justify-content: center;
-          width: 100%;
+        img {
+          width: 100px;
         }
 
         span:nth-child(2) {
-          display: flex;
-          justify-content: center;
-          width: 100%;
-          text-align: center;
+          font-size: 2rem;
         }
       }
     }
@@ -274,6 +270,9 @@
       padding-top: 20px;
       color: rgba(255, 255, 255, 0.7);
       justify-content: center;
+      font-size: 0.6rem;
+      gap: 50px;
+      text-align: end;
     }
   }
 }
