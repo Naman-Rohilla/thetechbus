@@ -1,8 +1,9 @@
 import "./sectionView.scss"; // Add styles for the section
 
-const SectionView = ({ backgroundColor, heading, children }) => {
+const SectionView = ({ id, backgroundColor, heading, children }) => {
   return (
     <section
+      id={id}
       style={{
         "--background-color": backgroundColor,
       }}

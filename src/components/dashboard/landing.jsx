@@ -246,24 +246,28 @@ export default function Landing() {
     <>
       <HomeView />
       <SectionView
+        id="service"
         backgroundColor={"rgba(229, 231, 235, 0.3)"}
         heading={"A Portfolio of Our Accomplished Projects"}
       >
         <ServiceView />
       </SectionView>
       <SectionView
+        id="product"
         backgroundColor="white"
         heading={"A Dedicated Team of Innovators:"}
       >
         <ProductView />
       </SectionView>
       <SectionView
+        id="client"
         backgroundColor="rgba(229, 231, 235, 0.3)"
         heading={"Trusted Clients"}
       >
         <ClientView />
       </SectionView>
       <SectionView
+        id="about"
         backgroundColor="white"
         heading={"What Others Say About our Services"}
       >

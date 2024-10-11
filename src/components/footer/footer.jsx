@@ -25,7 +25,7 @@ const Form = () => {
 const ConnectText = () => {
   return (
     <div className="content-container">
-      <div className="connect-heading">How Does It Work?</div>
+      <span className="connect-heading">How Does It Work?</span>
 
       <div className="connect-steps">
         <span>
