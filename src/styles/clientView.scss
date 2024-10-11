@@ -1,0 +1,48 @@
+@import "./variable.scss";
+
+.client-container {
+  background-color: rgba(38, 46, 56, 1);
+  height: 30vh;
+  padding-inline: $primary-margin;
+  padding-block: 100px;
+  color: white;
+
+  .client-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .client-img-container {
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .client-container {
+    height: 40vh;
+    padding-inline: 20px;
+    padding-block: 60px;
+    color: white;
+
+    .client-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .client-img-container {
+      display: flex;
+      padding-top: 80px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      img {
+        height: 40px;
+        width: 130px;
+      }
+    }
+  }
+}

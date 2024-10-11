@@ -1,0 +1,83 @@
+@import "../../styles/variable.scss";
+
+.navbar {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+
+  .navbar-container {
+    height: inherit;
+    margin-inline: $primary-margin;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        height: 50px;
+        width: 50px;
+        padding-top: 10px;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+    }
+
+    .menu-items {
+      display: flex;
+      height: inherit;
+      align-items: center;
+      font-family: "Cario", sans-serif;
+      font-weight: 500;
+      gap: 50px;
+
+      cursor: pointer;
+
+      .item {
+        height: 80%;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: color 0.1s ease-in;
+        font-weight: 600;
+      }
+
+      .book-button {
+        background-color: red;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    .navbar-container {
+      margin-inline: 20px;
+      .logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      .menu-items {
+        display: none;
+      }
+    }
+  }
+}
