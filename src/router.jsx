@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./root";
-import Landing from "./components/Landing/landing";
+import Landing from "./components/dashboard/landing";
 
 const router = createBrowserRouter([
   {
