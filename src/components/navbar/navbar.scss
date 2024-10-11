@@ -79,6 +79,16 @@
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .navbar {
+    .navbar-container {
+      .menu-items {
+        display: none;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 850px) {
   .navbar {
     .navbar-container {
