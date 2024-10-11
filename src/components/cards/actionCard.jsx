@@ -21,7 +21,7 @@ export default function ActionCard({
     <>
       <div
         style={{
-          height: enableContent ? "200px" : "50px",
+          height: enableContent ? "100%" : "10px",
           boxShadow: enableContent
             ? "5px 10px 50px rgba(0, 0, 0, 0.1)"
             : "none",

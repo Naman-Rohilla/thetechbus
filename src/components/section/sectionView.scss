@@ -1,0 +1,46 @@
+@import "../../styles/variable.scss";
+
+.section-container {
+  background-color: var(--background-color);
+  height: auto;
+  padding-inline: $primary-margin;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding-block: 80px;
+
+  .section-heading {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    span {
+      width: 600px;
+      text-align: center;
+    }
+  }
+
+  .section-content {
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .section-container {
+    padding-inline: $secondary-margin;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-container {
+    padding-inline: 20px;
+    height: auto;
+  }
+}

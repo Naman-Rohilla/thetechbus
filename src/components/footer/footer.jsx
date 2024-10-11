@@ -75,10 +75,6 @@ const LinkContainer = () => {
       </div>
       <div className="title-footer">
         <span>The Tech Bus</span>
-        <span>
-          Join us in crafting customized solutions that drive your business
-          forward.
-        </span>
       </div>
     </div>
   );
@@ -95,12 +91,18 @@ export default function Footer() {
         <div className="divide-line"></div>
         <LinkContainer />
         <div className="social-media">
-          <a href="https://www.linkedin.com/company/thetechbusconnects">
-            <img height={25} width={25} src="linkedin-brands-solid.svg" />
-          </a>
-          <a href="https://www.instagram.com/the_tech_bus?igsh=MXAxd3BqMXhzenRqOQ%3D%3D&utm_source=qr">
-            <img height={25} width={25} src="instagram-brands-solid.svg" />
-          </a>
+          <div>
+            <a href="https://www.linkedin.com/company/thetechbusconnects">
+              <img height={25} width={25} src="linkedin-brands-solid.svg" />
+            </a>
+            <a href="https://www.instagram.com/the_tech_bus?igsh=MXAxd3BqMXhzenRqOQ%3D%3D&utm_source=qr">
+              <img height={25} width={25} src="instagram-brands-solid.svg" />
+            </a>
+          </div>
+          <span>
+            Join us in crafting customized solutions that drive your business
+            forward.
+          </span>
         </div>
       </section>
     </>

@@ -71,7 +71,15 @@
   }
 }
 
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1600px) {
+  .navbar {
+    .navbar-container {
+      margin-inline: $secondary-margin;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
   .navbar {
     .navbar-container {
       margin-inline: 20px;
