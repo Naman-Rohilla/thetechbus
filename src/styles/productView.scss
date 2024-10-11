@@ -171,7 +171,7 @@
         }
 
         &.slide-out {
-          opacity: 0;
+          display: none;
           transform: translateX(0%);
           animation: dataSlideOut2 2s ease;
         }

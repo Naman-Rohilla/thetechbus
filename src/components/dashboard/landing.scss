@@ -20,21 +20,21 @@
       width: 600px;
       opacity: 0;
       animation: wordAppear 2s ease forwards;
-      animation-delay: calc(var(--word-index) * 0.5s);
     }
 
     span:nth-child(2) {
+      width: 80%;
       padding-block: 15px;
       opacity: 0;
-      font-size: 1rem;
-      font-weight: 300;
+      font-size: 1.2rem;
+      font-weight: 200;
       animation: wordAppear 2s ease forwards;
       animation-delay: 0.8s;
     }
 
     span:nth-child(3) {
       width: 250px;
-      padding-top: 40px;
+      padding-top: 20px;
       opacity: 0;
       animation: wordAppear 2s ease forwards;
       animation-delay: 1.5s;
@@ -44,9 +44,11 @@
   .vector-container {
     display: flex;
     width: 50%;
+    opacity: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: wordAppear 4s ease forwards;
 
     .container {
       width: 100px;
@@ -70,6 +72,9 @@
 .home-stats {
   height: 20vh;
   padding-inline: $primary-margin;
+  opacity: 0;
+  animation: wordAppear 2s ease forwards;
+  animation-delay: 2s;
 
   .stats-container {
     height: inherit;
@@ -145,8 +150,24 @@
         animation: imgAppear 2s ease forwards;
 
         img {
-          height: 500px;
+          min-height: 350px;
+          height: 100%;
+          max-height: 450px;
           width: 100%;
+          min-width: 720px;
+        }
+
+        div:nth-child(2) {
+          display: flex;
+          gap: 20px;
+          padding-top: 20px;
+          font-size: 0.6rem;
+          span {
+            padding-inline: 20px;
+            padding-block: 8px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.1);
+          }
         }
       }
     }
@@ -277,7 +298,24 @@
           animation: imgAppear 2s ease forwards;
 
           img {
-            height: 200px;
+            min-height: 100px;
+            height: 100%;
+            max-height: 450px;
+            width: 100%;
+            min-width: 100px;
+          }
+
+          div:nth-child(2) {
+            display: flex;
+            gap: 10px;
+            padding-top: 20px;
+            font-size: 0.4rem;
+            span {
+              padding-inline: 10px;
+              padding-block: 5px;
+              border-radius: 5px;
+              background-color: rgba(0, 0, 0, 0.1);
+            }
           }
         }
       }

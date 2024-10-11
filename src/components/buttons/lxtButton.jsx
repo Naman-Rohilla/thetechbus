@@ -9,8 +9,8 @@ export default function LxtButton({
     <div
       className="lxtButton"
       style={{
-        backgroundColor: color,
-        borderRadius: `${borderRadius}px`,
+        "--button-color": color,
+        "--border-radius": `${borderRadius}px`,
       }}
     >
       {text}

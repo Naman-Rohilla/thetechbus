@@ -1,32 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.scss";
 import LxtButton from "../buttons/lxtButton";
+import menuItems from "../../jsons/menuItems";
 
 export default function Navbar() {
   const textButton = "Book a Free Demo";
-
-  const menuItems = [
-    {
-      link: "Home",
-      redirect: "/about",
-    },
-    {
-      link: "Services",
-      redirect: "/rr",
-    },
-    {
-      link: "Projects",
-      redirect: "/rr",
-    },
-    {
-      link: "About",
-      redirect: "/rr",
-    },
-    {
-      link: "Contact",
-      redirect: "/rr",
-    },
-  ];
 
   return (
     <div className="navbar">
@@ -37,9 +15,9 @@ export default function Navbar() {
         </div>
         <div className="menu-items">
           {menuItems.map((mt, index) => (
-            <Link key={index} to={mt.redirect} className="item" exact>
+            <a key={index} href={mt.redirect} className="item">
               {mt.link}
-            </Link>
+            </a>
           ))}
           <LxtButton text={textButton} />
         </div>
