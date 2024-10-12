@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import menuItems from "../../jsons/menuItems";
 import "./footer.scss";
 
@@ -82,29 +83,68 @@ const LinkContainer = () => {
 };
 
 export default function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const observedId = entry.target.getAttribute("id");
+            if (observedId === "contact") {
+              setIsVisible(true);
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => {
+      if (footerRef.current) {
+        observer.unobserve(footerRef.current);
+      }
+    };
+  }, []);
   return (
     <>
-      <section id="contact" className="footer-container">
-        <div className="work-container">
-          <ConnectText />
-          <Form />
-        </div>
-        <div className="divide-line"></div>
-        <LinkContainer />
-        <div className="social-media">
-          <div>
-            <a href="https://www.linkedin.com/company/thetechbusconnects">
-              <img height={25} width={25} src="linkedin-brands-solid.svg" />
-            </a>
-            <a href="https://www.instagram.com/the_tech_bus?igsh=MXAxd3BqMXhzenRqOQ%3D%3D&utm_source=qr">
-              <img height={25} width={25} src="instagram-brands-solid.svg" />
-            </a>
-          </div>
-          <span>
-            Join us in crafting customized solutions that drive your business
-            forward.
-          </span>
-        </div>
+      <section ref={footerRef} id="contact" className="footer-container">
+        {isVisible && (
+          <>
+            <div className="work-container">
+              <ConnectText />
+              <Form />
+            </div>
+            <div className="divide-line"></div>
+            <LinkContainer />
+            <div className="social-media">
+              <div>
+                <a href="https://www.linkedin.com/company/thetechbusconnects">
+                  <img height={25} width={25} src="linkedin-brands-solid.svg" />
+                </a>
+                <a href="https://www.instagram.com/the_tech_bus?igsh=MXAxd3BqMXhzenRqOQ%3D%3D&utm_source=qr">
+                  <img
+                    height={25}
+                    width={25}
+                    src="instagram-brands-solid.svg"
+                  />
+                </a>
+              </div>
+              <span>
+                Join us in crafting customized solutions that drive your
+                business forward.
+              </span>
+            </div>
+          </>
+        )}
       </section>
     </>
   );

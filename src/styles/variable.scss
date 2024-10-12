@@ -9,3 +9,29 @@ $primary-color-dim: rgba(2, 23, 58, 0.8);
 $secondary-color: #4996f0;
 
 $secondary-margin: 125px;
+
+$primaryAnimation: sectionAnimationDown 2s ease forwards;
+
+@keyframes sectionAnimationDown {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+$secondaryAnimation: sectionAnimationUp 3s ease forwards;
+
+@keyframes sectionAnimationUp {
+  0% {
+    transform: translateY(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

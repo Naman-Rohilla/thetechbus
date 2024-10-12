@@ -10,6 +10,8 @@
   box-sizing: border-box;
   padding-block: 80px;
 
+  transition: opacity 4s ease, transform 0.8s ease;
+
   .section-heading {
     width: 100%;
     height: 30%;
@@ -20,6 +22,16 @@
     font-weight: 600;
     cursor: pointer;
 
+    &.in-view {
+      opacity: 1;
+      animation: $secondaryAnimation;
+    }
+
+    &.out-of-view {
+      opacity: 0;
+      animation: $primaryAnimation;
+    }
+
     span {
       width: 600px;
       text-align: center;
@@ -29,6 +41,16 @@
   .section-content {
     position: relative;
     box-sizing: border-box;
+
+    &.in-view {
+      opacity: 1;
+      animation: $secondaryAnimation;
+    }
+
+    &.out-of-view {
+      opacity: 0;
+      animation: $primaryAnimation;
+    }
   }
 }
 

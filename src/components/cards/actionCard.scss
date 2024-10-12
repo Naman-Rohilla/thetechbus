@@ -5,10 +5,17 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-
   padding: 30px;
+  height: 0;
+  transition: height 2s ease;
 
-  transition: height 0.3s ease;
+  &.expanded {
+    height: var(--height);
+  }
+
+  &.normal {
+    height: var(--height);
+  }
 
   .action-heading {
     display: flex;
@@ -32,7 +39,7 @@
     padding-top: 20px;
     text-align: justify;
     font-weight: 300;
-    animation: textView 2s ease forwards;
+    animation: textView 2s ease-in forwards;
   }
 }
 

@@ -19,7 +19,7 @@
       font-weight: 800;
       width: 600px;
       opacity: 0;
-      animation: wordAppear 2s ease forwards;
+      animation: $primaryAnimation;
     }
 
     span:nth-child(2) {
@@ -28,16 +28,16 @@
       opacity: 0;
       font-size: 1.2rem;
       font-weight: 200;
-      animation: wordAppear 2s ease forwards;
-      animation-delay: 0.8s;
+      animation: $primaryAnimation;
+      animation-delay: 0.5s;
     }
 
     span:nth-child(3) {
       width: 250px;
       padding-top: 20px;
       opacity: 0;
-      animation: wordAppear 2s ease forwards;
-      animation-delay: 1.5s;
+      animation: $primaryAnimation;
+      animation-delay: 0.6s;
 
       a {
         text-decoration: none;
@@ -53,7 +53,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: wordAppear 4s ease forwards;
+    animation: $primaryAnimation;
 
     .container {
       width: 100px;
@@ -78,8 +78,8 @@
   height: 20vh;
   padding-inline: $primary-margin;
   opacity: 0;
-  animation: wordAppear 2s ease forwards;
-  animation-delay: 2s;
+  animation: $primaryAnimation;
+  animation-delay: 0.8s;
 
   .stats-container {
     height: inherit;
