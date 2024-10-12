@@ -20,7 +20,7 @@ const SectionView = ({ id, backgroundColor, heading, children }) => {
         });
       },
       {
-        threshold: 0.1, // Adjust this threshold to trigger earlier/later
+        threshold: 0.01, // Adjust this threshold to trigger earlier/later
       }
     );
 

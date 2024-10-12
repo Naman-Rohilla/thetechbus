@@ -14,6 +14,7 @@ $primaryAnimation: sectionAnimationDown 2s ease forwards;
 
 @keyframes sectionAnimationDown {
   0% {
+    opacity: 1;
     transform: translateY(-40px);
   }
 
@@ -27,6 +28,7 @@ $secondaryAnimation: sectionAnimationUp 3s ease forwards;
 
 @keyframes sectionAnimationUp {
   0% {
+    opacity: 0;
     transform: translateY(80px);
   }
 
