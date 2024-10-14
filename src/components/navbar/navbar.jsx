@@ -5,6 +5,7 @@ import menuItems from "../../jsons/menuItems";
 import { useEffect, useRef, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
+import ScrollProgress from "../scrollIndicator/scrollProgress";
 
 export default function Navbar() {
   const textButton = "Book a Free Demo";
@@ -60,7 +61,9 @@ export default function Navbar() {
             />
           </div>
         </div>
+        <ScrollProgress />
       </div>
+
       <AnimatePresence>
         {openDrawer && (
           <>
