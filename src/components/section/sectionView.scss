@@ -2,15 +2,12 @@
 
 .section-container {
   background-color: var(--background-color);
-  height: auto;
   padding-inline: $primary-margin;
   display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   padding-block: 80px;
-
-  transition: opacity 4s ease, transform 0.8s ease;
 
   .section-heading {
     width: 100%;
@@ -22,16 +19,6 @@
     font-weight: 600;
     cursor: pointer;
 
-    &.in-view {
-      opacity: 1;
-      animation: $secondaryAnimation;
-    }
-
-    &.out-of-view {
-      opacity: 0;
-      animation: $primaryAnimation;
-    }
-
     span {
       width: 600px;
       text-align: center;
@@ -41,16 +28,6 @@
   .section-content {
     position: relative;
     box-sizing: border-box;
-
-    &.in-view {
-      opacity: 1;
-      animation: $secondaryAnimation;
-    }
-
-    &.out-of-view {
-      opacity: 0;
-      animation: $primaryAnimation;
-    }
   }
 }
 
