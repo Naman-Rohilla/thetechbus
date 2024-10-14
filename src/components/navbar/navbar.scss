@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 100;
+  z-index: 20;
   background-color: white;
 
   .navbar-container {
@@ -68,6 +68,59 @@
         outline: none;
       }
     }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+.drawer {
+  z-index: 40;
+  height: 100vh;
+  width: 60%;
+  background-color: rgba(38, 46, 56, 1);
+  position: fixed;
+  right: 0;
+  color: white;
+
+  .drawer-header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    box-sizing: border-box;
+  }
+
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+
+    a {
+      display: flex;
+      gap: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: transparent;
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+      height: 70px;
+
+      box-sizing: border-box;
+      border: 5px solid transparent;
+      transition: box-shadow 0.5s ease;
+
+      &:hover {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        background-color: rgba(243, 243, 243, 0.1);
+        color: white;
+        border-left: 5px solid white;
+      }
+    }
   }
 }
 
@@ -106,6 +159,11 @@
 
       .menu-items {
         display: none;
+      }
+
+      .hamburger {
+        display: flex;
+        align-items: center;
       }
     }
   }

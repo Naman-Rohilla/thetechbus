@@ -43,11 +43,17 @@ const ClientView = () => {
       <div className="client-subheading">
         Worked with Startup funded by Accel India & Ycombinator
       </div>
-      <div className="client-img-container">
-        <img src="volonte.png" />
-        <img src="ltfinance.png" />
-        <img src="axis.png" />
-        <img src="tresemme.png" />
+      <div className="client-img-marquee">
+        <div className="marquee-content">
+          <img src="volonte.png" />
+          <img src="ltfinance.png" />
+          <img src="axis.png" />
+          <img src="tresemme.png" />
+          <img className="duplicate" src="volonte.png" />
+          <img className="duplicate" src="ltfinance.png" />
+          <img className="duplicate" src="axis.png" />
+          <img className="duplicate" src="tresemme.png" />
+        </div>
       </div>
     </>
   );
